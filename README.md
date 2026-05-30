@@ -23,12 +23,12 @@ The robot architecture bridges high-level processing with low-level hardware act
 
 | Component Type | Model / Specification | Function |
 | :--- | :--- | :--- |
-| **Main Compute** | [e.g., Raspberry Pi 4 / Laptop] | Runs the computer vision model and processes video feed |
-| **Microcontroller** | [e.g., Arduino Uno / STM32] | Handles low-level motor control and sensor reading |
-| **Camera** | [e.g., Raspberry Pi Cam V2 / USB Webcam] | Captures real-time video stream for tracking |
-| **Actuators** | [e.g., Nema 17 Stepper / Servo MG996R] | Drives the dome/turret rotation |
-| **Motor Driver** | [e.g., L298N / TMC2209] | Interfaces microcontroller commands with the motors |
-| **Power Supply** | [e.g., LiPo Battery 3S 11.1V] | Powers the computing unit and high-torque motors |
+| **Main Compute** | NVIDIA Jetson Nano | Runs the AI vision pipeline and processes the webcam feed |
+| **Microcontroller** | ESP32 | Manages low-level motor control and timing |
+| **Camera** |Logitech Webcam | Captures real-time video stream for tracking |
+| **Turret Actuator** | Stepper Motor + TMC2209 | Drives the dome rotation smoothly and silently |
+| **Wheel Actuator** | DC Motors + MDD10A SmartDrive | Controls the robot's main mobility and platform movement |
+| **Power Supply** | External Power Bank / Battery | Provides independent power to the compute unit and motors |
 
 ---
 
