@@ -1,11 +1,4 @@
 """
-reconnaissance.py — Tourelle de suivi dual-thread
-==================================================
-Corrections v5 :
-  - Tourelle moins réactive : DEAD_ZONE_PX agrandi, DEG_PER_PX réduit, ROT_PERIOD_S allongé
-  - Commande "stop" dans le terminal → programme s'arrête proprement
-  - Vérin retiré complètement
-"""
 
 import json
 import threading
