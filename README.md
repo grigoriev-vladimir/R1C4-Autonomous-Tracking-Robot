@@ -34,16 +34,17 @@ The robot architecture bridges high-level processing with low-level hardware act
 
 ## 🧠 Software & Control Logic
 
-### 1. Vision Pipeline
-The high-level compute unit processes the video stream frame-by-frame:
-* **Framework:** OpenCV [and state any model used like YOLO, Haar Cascades, or Mediapipe].
-* **Logic:** The script detects the user, extracts the bounding box center coordinates $(X_{target}, Y_{target})$, and calculates the pixel offset relative to the camera's center $(X_{center}, Y_{center})$.
+### 1. Vision & Recognition Pipeline
+The high-level compute unit processes the webcam video feed frame-by-frame using a dual-stage approach:
+* **Face Recognition (LBPH):** The system uses the **LBPH (Local Binary Patterns Histograms)** recognizer from OpenCV. It identifies the specific face of the "Master" based on a pre-trained dataset of face samples.
+* **Target Tracking (CSRT):** Once the master is recognized, the system initializes an OpenCV **CSRT Tracker** on the target. This ensures robust, real-time tracking even with fast movements or partial occlusions.
+* **Logic:** The Python script extracts the tracking bounding box center coordinates and calculates the horizontal pixel error relative to the camera's center view.
 
-### 2. Control Loop (Feedback System)
-The tracking error is sent to the microcontroller to drive the turret motors:
-* **Algorithm:** [Mention if you used a PID controller or a simple proportional loop].
-* The system dynamically adjusts the motor speed and direction to minimize the error and maintain smooth, fluid tracking without jerky movements.
-
+### 2. Communication & Control Loop
+The tracking error is sent in real-time to the microcontroller to drive the robot's actuators:
+* **Data Transmission:** The calculated pixel error is transmitted from the NVIDIA Jetson Nano to the **ESP32** via a **Serial (UART) link**.
+* **Turret Actuation:** The ESP32 processes this error to command the **TMC2209** driver. It dynamically adjusts the stepper motor's speed and direction to smoothly and silently rotate the dome, keeping the master centered in the camera's field of view.
+* **Mobility:** In parallel, the ESP32 handles the robot's displacement by driving the main DC motors through the **MDD10A** smart driver based on the system's operational state.
 ---
 
 ## 📁 Repository Structure
