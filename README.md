@@ -9,10 +9,10 @@ R1C4 is a 3/5 scale R2-D2 replica, co-developed as a duo with Emma Da Mota. It i
 
 
 https://github.com/user-attachments/assets/d546fa72-e5a3-4e6c-b071-dcd2d76cd6c8
+https://github.com/user-attachments/assets/aad1944b-dfc9-40ba-a5d5-88d33bf9193e 
 
 
 
-https://github.com/user-attachments/assets/aad1944b-dfc9-40ba-a5d5-88d33bf9193e
 
 
 
