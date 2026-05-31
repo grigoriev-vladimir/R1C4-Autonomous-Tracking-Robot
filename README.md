@@ -6,7 +6,11 @@ R1C4 is a 3/5 scale R2-D2 replica equipped with computer vision to autonomously 
 
 ## 🎥 Demo
 <!-- TIP: Once your repo is ready, upload a GIF or a short video of R1C4 tracking you here -->
-![R1C4 in Action](media/demo.gif)
+
+
+https://github.com/user-attachments/assets/d546fa72-e5a3-4e6c-b071-dcd2d76cd6c8
+
+
 *Click here to watch the full video demonstration on [YouTube/LinkedIn/etc.]*
 
 ---
