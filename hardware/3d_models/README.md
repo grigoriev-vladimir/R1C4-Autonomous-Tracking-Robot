@@ -34,6 +34,7 @@ For the upper section and the tracking turret mechanism, only **1 unit** of each
 
 ### 🦴 3. Carcass Module (Structure & Frame - Single Unit Requirements)
 All other structural components required to complete the main robot body (carcass) and internal mechanisms need **1 unit** each:
+* **1x** R1-C4 - Chassis One Block.step
 * **1x** Main Leg (`R1-C4 - Leg.step`)
 * **1x** Ankle joint (`R1-C4 - Ankle.step`)
 * **1x** Center foot axle (`R1-C4 - Axe center foot.step`)
