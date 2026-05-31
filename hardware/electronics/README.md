@@ -1,1 +1,4 @@
-This folder contains wiring diagrams and schematics for the Jetson Nano, ESP32, TMC2209, and MDD10A
+# ⚡ Electronics & Power Distribution
+
+This folder contains the electrical architecture of R1-C4.
+![Uploading circuit_image (1).png…]()
