@@ -1,4 +1,4 @@
-<img width="358" height="634" alt="image" src="https://github.com/user-attachments/assets/ae31ec56-2cd9-434e-89d7-4baa375fe02f" /># R1C4 - Autonomous Target Tracking Robot (Scale 3/5)
+R1C4 - Autonomous Target Tracking Robot (Scale 3/5)
 
 R1C4 is a 3/5 scale R2-D2 replica, co-developed as a duo with Emma Da Mota. It is equipped with computer vision to autonomously detect, track, and follow its "master" using a motorized turret system. This project combines computer vision, advanced mechatronics, and real-time control loops.
 
